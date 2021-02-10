@@ -1,0 +1,87 @@
+body{
+    background-image: url("../../img/背景/2.jpeg");
+    /* 文字不可选 */
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+a{
+    text-decoration:none;
+    display: inline;
+    color: #1d7db1;
+}
+
+/*设置标题框*/
+.box_img{
+    background-color: #3C4349;
+    height: 281px;
+    width: 1012px;
+    /*border: black 1px solid;*/
+    border-radius: 9px;
+    box-shadow: 0 5px 17px rgba(0,0,0,0.7);
+    padding: 0 94px;
+    margin: 60px auto;
+    position: relative;
+}
+
+.box_img span{
+    color: #fff;
+    font-size:42px;
+    line-height: 210px;
+    letter-spacing:10px;
+    font-family: "helvetica";
+    font-weight: 600;
+}
+
+.box_img .tips{
+    background-color: #c1cdcd;
+    width: 120px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 5px;
+    border-radius: 40px;
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    transition: width 0.2s ,height 0.2s ,box-shadow 0.25s;
+}
+
+/*.box_img .tips:hover{*/
+/*    width: 125px;*/
+/*    height: 63px;*/
+/*    box-shadow: 0 0 6px rgba(0,0,0,0.5);*/
+/*}*/
+
+.box_img img{
+    float:right;
+}
+
+/*设置法律条文*/
+.box_law{
+    width: 1012px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #555;
+    letter-spacing:1px;
+    zoom: 1;
+    /*height: 800px;*/
+    margin: 60px auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    padding: 92px;
+}
+
+.box div{
+    margin-bottom: 20px;
+}
+
+.box_law h2{
+    margin-top: 40px;
+    font-size: 33px;
+}

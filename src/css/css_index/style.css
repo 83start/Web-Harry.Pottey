@@ -1,0 +1,132 @@
+
+html{
+  perspective: 800px;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 7vmin;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  /*文字不可选*/
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+.wrap {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.wrap .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+  background: url("../../img/背景/index_background_img.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*设置动态图片*/
+.cube {
+  width: 200px;
+  height: 200px;
+  /* background-color: #bfa; */
+  margin: 100px auto;
+  /* 设置3d变形效果 */
+  transform-style: preserve-3d;
+  /* transform: rotateX(45deg) rotateZ(45deg); */
+  animation: rotate 20s infinite linear;
+  /* transform:rotateY(45deg) scaleZ(2); */
+}
+
+.cube>div {
+  width: 200px;
+  height: 200px;
+  /* 为元素设置透明效果 */
+  opacity: 0.5;
+  position: absolute;
+}
+
+.cube img {
+  width: 200px;
+  vertical-align: top;
+}
+
+.box1 {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.box2 {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.box3 {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.box4 {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+.box5 {
+  transform:rotateY(180deg) translateZ(100px);
+}
+
+.box6 {
+  transform: rotateY(0deg) translateZ(100px);
+}
+
+@keyframes rotate {
+  form{
+    transform:rotateX(0) rotateZ(0)
+  }
+
+  to{
+    transform:rotateX(1turn) rotateZ(1turn)
+  }
+}
+
+/*=====设置时间样式=====*/
+.time_wapper{
+  width: 600px;
+  text-align: center;
+  margin: 30px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.time_wapper div{
+  font-family: 华文宋体;
+  font-size: 2.1em;
+  font-weight: 400;
+  color: #D4D5E1;
+  float: left;
+  margin-right: 10px;
+  /*文字不可选*/
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}

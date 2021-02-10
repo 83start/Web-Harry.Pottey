@@ -1,0 +1,46 @@
+body{
+    background-image: url("../../img/背景/2.jpeg");
+    /* 文字不可选 */
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+/*设置标题框*/
+.box_img{
+    width: 1360px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin: 60px auto;
+}
+
+.box_img img{
+    width: 1360px;
+}
+
+/*设置法律条文*/
+.box_law{
+    width: 1012px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #555;
+    letter-spacing:1px;
+    zoom: 1;
+    /*height: 800px;*/
+    margin: 60px auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    padding: 92px;
+}
+
+.box div{
+    margin-bottom: 20px;
+}
+
+.box_law h2{
+    margin-top: 40px;
+    font-size: 33px;
+}

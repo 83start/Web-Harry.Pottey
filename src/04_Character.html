@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Character</title>
+	<!--设置网页图标-->
+	<link rel="icon" href="img/图标/bitbug_4.ico">
+
+	<!--引入字体图标库/重置样式表-->
+	<link rel="stylesheet" href="fa/css/all.css">
+	<link rel="stylesheet" href="重置样式表/reset.css">
+
+	<!--引入导航样式表-->
+	<link rel="stylesheet" href="css/css_share/NavigationWapper.css">
+	<!--引入本网页样式和脚本-->
+	<link rel="stylesheet" href="css/css_character/style.css">
+	<script src="js/js_character/img_change.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/css_character/normalize.min.css" />
+	<!--引入音频脚本-->
+	<script src="js/js_share/video.js"></script>
+
+</head>
+
+<body id="page">
+	<!--设置顶部导航栏-->
+	<div class="top_wapper" id="top_wapper">
+		<!--设置内部容器-->
+		<div class="inner_wapper">
+			<!--设置左侧导航栏 -->
+			<div class="left_navigation">
+				<div class="index">
+					<a href="01_Index.html" target="_blank" class="index"><i class="fas fa-home fa-fw"></i>首页</a>
+				</div>
+				<div class="move">
+					<a href="02_Movie.html" target="_blank"><i class="fas fa-film"></i>电影</a>
+				</div>
+				<div class="anuther">
+					<a href="03_Author.html" target="_blank"> <i class="fas fa-marker"></i>作者</a>
+				</div>
+				<div class="character">
+					<a href="javascript:;"><i class="fas fa-feather-alt"></i>档案</a>
+				</div>
+				<div class="brand">
+					<a href="05_Product.html" target="_blank"> <i class="fas fa-cart-arrow-down"></i>品牌</a>
+				</div>
+				<div class="remember">
+					<a href="06_Remember.html" target="_blank"> <i class="fas fa-piggy-bank"></i>纪念</a>
+				</div>
+			</div>
+			<img src="img/图标/hp2.jpg" alt="hp">
+			<!--设置左侧导航栏-->
+			<div class="right_navigation">
+				<div id="signIn">
+					<a href="07_SighIn.html" target="_blank"> <i class="fas fa-hat-wizard"> </i>Join us</a>
+				</div>
+				<div class="search_wapper">
+					<a href="https://help.pottermore.com/hc/en-gb" target="_blank">
+						<i class="fas fa-dragon" id="search_block"></i>Pottermore
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--设置图片轮播-->
+	<div class="img_wapper">
+		<!--设置一个浮动图片 -->
+		<div class="top_img">
+			<img src="img/图标/timg.jpg" alt="图标">
+		</div>
+		<!--设置浮动文字 -->
+		<span class=" top_word">
+			<h3>Harry Potter</h3>
+			<h4>The boy who lived</h4>
+			<span class="word"></br>
+				overcome the evil dark wizard Lord 
+			</span></br>
+			<span class="word">
+				Voldemort, main story arc concerns Harry's
+			</span></br>
+			<span class="word">
+				quest to whose aim is to subjugate non-magical
+			</span></br>
+			<span class="word">
+				people, conquer the wizarding world......
+			</span></br>
+			<a href="#people" class="learnMore">
+				Learn more
+			</a>
+		</span>>
+	</div>
+	<div id="div_img">
+		<img src="img/动画海报/1.JPG" id="pic" />
+	</div>
+	<div id="div_point">
+		<ul>
+			<li onmouseover="changeImg(1)"><i class="fa fa-heart"></i></li>
+			<li onmouseover="changeImg(2)"><i class="fa fa-heart"></i></li>
+			<li onmouseover="changeImg(3)"><i class="fa fa-heart"></i></li>
+			<li onmouseover="changeImg(4)"><i class="fa fa-heart"></i></li>
+			<li onmouseover="changeImg(5)"><i class="fa fa-heart"></i></li>
+			<li onmouseover="changeImg(6)"><i class="fa fa-heart"></i></li>
+		</ul>
+	</div>
+	<div id="div_left" onclick="left()">
+		<i class="fas fa-hand-point-left"></i>
+	</div>
+	<div id="div_right" onclick="right()">
+		<i class="fas fa-hand-point-right"></i>
+	</div>
+	</div>
+
+	<!--人物简介-->
+	<table class="people" id="people" border rules=none cellspacing=0 align=center>
+		<!--设置动画-->
+		<div class="spinner-box">
+			<div class="solar-system">
+				<div class="earth-orbit orbit">
+					<div class="planet earth"></div>
+					<div class="venus-orbit orbit">
+						<div class="planet venus"></div>
+						<div class="mercury-orbit orbit">
+							<div class="planet mercury"></div>
+							<div class="sun"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--设置人物九宫格-->
+		<tr>
+			<td>
+				<a href="z_html/c_1.html"><img src="img/人物/哈利波特.png" alt=""><span>Harry.Potter <h4>档案</h4></span></a>
+			</td>
+			<td>
+				<a href="z_html/c_2.html"><img src="img/人物/邓老.png" alt=""><span> Dumbledore <h4>档案</h4></span></a>
+			</td>
+			<td>
+				<a href="z_html/c_3.html"><img src="img/人物/韦恩.png" alt=""><span>Ron Weasley <h4>档案</h4></span></a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="z_html/c_4.html"><img src="img/人物/赫敏.png" alt=""><span>Jean Granger <h4>档案</h4></span></a>
+			</td>
+			<td>
+				<a href="z_html/c_5.html"><img src="img/人物/海格.png" alt=""><span>Rubeus Hagrid <h4>档案</h4></span></a>
+			</td>
+			<td>
+				<a href="z_html/c_6.html"><img src="img/人物/卢娜.png" alt=""><span>Luna Lovegood<h4>档案</h4></span></a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="z_html/c_7.html"><img src="img/人物/斯内普.png" alt=""><span>Severus Snape <h4>档案</h4></span></a>
+			</td>
+			<td>
+				<a href="z_html/c_8.html"><img src="img/人物/马尔福.png" alt=""><span>Draco Malfoy <h4>档案</h4></span></a>
+			</td>
+			<td>
+				<a href="z_html/c_9.html"><img src="img/人物/伏地魔.png" alt=""><span>Tom Riddle <h4>档案</h4></span></a>
+			</td>
+		</tr>
+	</table>
+
+	<!-- 设置音频文件-->
+	<audio autoplay id="vd">
+		<!-- 对不起，您的浏览器不支持播放音频！请升级浏览器！ -->
+		<source src="mp3/开场音乐.mp3">
+	</audio>
+</body>
+
+</html>

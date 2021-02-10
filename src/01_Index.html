@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Portter</title>
+    <!--设置网页图标-->
+    <link rel="icon" href="img/图标/bitbug_1.ico">
+
+    <!--引入字体图标库/重置样式表-->
+    <link rel="stylesheet" href="fa/css/all.css">
+    <link rel="stylesheet" href="重置样式表/reset.css">
+    <!--引入jquary脚本-->
+    <script src="js/js_share/jquery-1.12.4.min.js"></script>
+
+    <!--引入导航样式表-->
+    <link rel="stylesheet" href="css/css_share/NavigationWapper.css">
+    <!--设置大图图标样式/脚本-->
+    <link rel="stylesheet" href="css/css_index/style.css">
+    <link rel="stylesheet" href="css/css_index/htmleaf-demo.min.css">
+    <script src="js/js_index/index_jq.min.js"></script>
+    <!--引入计时器脚本-->
+    <script src="js/js_index/time.js"></script>
+    <!--引入音频脚本-->
+    <link rel="stylesheet" href="js/js_share/video.js">
+
+</head>
+
+<body>
+    <!--设置顶部导航栏-->
+    <div class="top_wapper" id="top_wapper">
+        <!--设置内部容器-->
+        <div class="inner_wapper">
+            <!--设置左侧导航栏 -->
+            <div class="left_navigation">
+                <div class="index">
+                    <a href="javascript:;" class="index"><i class="fas fa-home fa-fw"></i>首页</a>
+                </div>
+                <div class="move">
+                    <a href="02_Movie.html" target="_blank"><i class="fas fa-film"></i>电影</a>
+                </div>
+                <div class="anuther">
+                    <a href="03_Author.html" target="_blank"> <i class="fas fa-marker"></i>作者</a>
+                </div>
+                <div class="character">
+                    <a href="04_Character.html" target="_blank"><i class="fas fa-feather-alt"></i>档案</a>
+                </div>
+                <div class="brand">
+                    <a href="05_Product.html" target="_blank"> <i class="fas fa-cart-arrow-down"></i>品牌</a>
+                </div>
+                <div class="remember">
+                    <a href="06_Remember.html" target="_blank"> <i class="fas fa-piggy-bank"></i>纪念</a>
+                </div>
+            </div>
+            <img src="img/图标/hp2.jpg" alt="hp">
+            <!--设置左侧导航栏-->
+            <div class="right_navigation">
+                <div id="signIn">
+                    <a href="07_SighIn.html" target="_blank"> <i class="fas fa-hat-wizard"> </i>Join us</a>
+                </div>
+                <div class="search_wapper">
+                    <a href="https://help.pottermore.com/hc/en-gb" target="_blank">
+                        <i class="fas fa-dragon" id="search_block"></i>Pottermore
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--设置大图框-->
+    <div class="wrap">
+        <!--创建一个动态图片外部的容器 -->
+        <div class="cube">
+            <!--引入图片 -->
+            <div class="box1">
+                <img src="img/动画海报/01.JPG">
+            </div>
+            <div class="box2">
+                <img src="img/动画海报/02.JPG">
+            </div>
+            <div class="box3">
+                <img src="img/动画海报/03.JPG">
+            </div>
+            <div class="box4">
+                <img src="img/动画海报/04.JPG">
+            </div>
+            <div class="box5">
+                <img src="img/动画海报/05.JPG">
+            </div>
+            <div class="box6">
+                <img src="img/动画海报/06.JPG">
+            </div>
+        </div>
+        <div class="bg"></div>
+        <header class="htmleaf-header">
+            <h1>纪念零零后哈粉的青春</br> <span>人必须面对现实，不能总生活在幻想里。</span></h1>
+        </header>
+        <div class="time_wapper">
+            <div>哈利结束至今：</div>
+            <div id="day" class="day"></div>
+            <div id="hour" class="hour"></div>
+            <div id="min" class="min"></div>
+            <div id="sec" class="sec"></div>
+        </div>
+    </div>
+
+    <!--设置底层导航栏-->
+    <div class="button_wapper">
+        <div class="left">
+            <div class="language"><i class="fas fa-language"></i>(Chinese) 中国</div>
+        </div>
+        <div class="right">
+            <div class="hp"><a href="javascript:;"> &copy;Harry Potter 2020</a></div>
+            <div class="JW"><a href="http://www.beian.miit.gov.cn/state/outPortal/loginPortal.action" target="_blank"><i class="fas fa-layer-group"></i>京安网安备 1155466645546—89</a></div>
+            <div CLASS="JB"><a href="http://www.beian.miit.gov.cn/" target="_blank"><i class="fas fa-folder-open"></i>京ICP备1102号—6</a></div>
+            <div class="cookie"><a href="./o_html/ReturnAndExchange.html" target="_blank">退换货政策</a></div>
+            <div class="advertisement"><a href="./o_html/Advertisement.html" target="_blank">隐私政策</a></div>
+            <div class="trademark"><a href="o_html/Trademark.html" target="_blank">商标</a></div>
+            <div class="use"><a href="o_html/ArticlesOfLaw.html" target="_blank">法律条款</a></div>
+            <div class="chat"><a href="mailto:976296751@qq.com">与我们联系</a></div>
+        </div>
+    </div>
+
+    <!--设置音频文件-->
+    <audio autoplay id="vd">
+        <!-- 对不起，您的浏览器不支持播放音频！请升级浏览器！ -->
+        <source src="mp3/档案音乐.mp3">
+    </audio>
+
+</body>
+
+</html>

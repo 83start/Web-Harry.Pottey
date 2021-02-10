@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join us</title>
+    <!--修改图标-->
+    <link rel="icon" href="img/图标/bitbug_8.ico">
+
+    <!--引入字体图标/样式重置-->
+    <link rel="stylesheet" href="重置样式表/reset.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+
+    <!--引入顶端导航栏样式和底部导航栏样式-->
+    <link rel="stylesheet" href="css/css_share/NavigationWapper.css">
+    <!--引入打字机脚本-->
+    <script src="js/js_signIn/typewriter01.min.js"></script>
+    <script src="js/js_signIn/typewriter02.js"></script>
+    <link rel="stylesheet" href="css/css_signIn/htmleaf-demo.min.css">
+    <link rel="stylesheet" href="css/css_signIn/style.min.css">
+
+</head>
+
+<body>
+    <!--设置顶部导航栏-->
+    <div class="top_wapper" id="top_wapper">
+        <!--设置内部容器-->
+        <div class="inner_wapper">
+            <!--设置左侧导航栏 -->
+            <div class="left_navigation">
+                <div class="index">
+                    <a href="01_Index.html" target="_blank" class="index">
+                        <i class="fas fa-home fa-fw"></i>首页</a>
+                </div>
+                <div class="move">
+                    <a href="02_Movie.html" target="_blank"><i class="fas fa-film"></i>电影</a>
+                </div>
+                <div class="anuther">
+                    <a href="03_Author.html" target="_blank"> <i class="fas fa-marker"></i>作者</a>
+                </div>
+                <div class="character">
+                    <a href="04_Character.html" target="_blank"><i class="fas fa-feather-alt"></i>档案</a>
+                </div>
+                <div class="brand">
+                    <a href="05_Product.html" target="_blank"> <i class="fas fa-cart-arrow-down"></i>品牌</a>
+                </div>
+                <div class="remember">
+                    <a href="06_Remember.html" target="_blank"> <i class="fas fa-piggy-bank"></i>纪念</a>
+                </div>
+            </div>
+            <img src="img/图标/hp2.jpg" alt="hp">
+            <!--设置左侧导航栏-->
+            <div class="right_navigation">
+                <div id="./signIn">
+                    <a href="javascript:;"> <i class="fas fa-hat-wizard"> </i>Join us</a>
+                </div>
+                <div class="search_wapper">
+                    <a href="https://help.pottermore.com/hc/en-gb" target="_blank">
+                        <i class="fas fa-dragon" id="search_block"></i>Pottermore
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--设置登录容器-->
+    <div class="wrapper">
+        <form action="#" method="post" id="post">
+            <!--设置打字机-->
+            <div id="asklz" style="color:#e7e702 ;font-style: italic; font-weight: 200;"></div>
+            <div class="loginBox">
+                <div class="loginBoxCenter">
+                    <p><label>用户名：</label></p>
+                    <!--规定当页面加载时按钮应当自动地获得焦点。 -->
+                    <!--提供可描述输入字段预期值的提示信息-->
+                    <p><input type="text" id="text" name="text" class="loginInput" autofocus autocomplete="off"
+                            placeholder="请输入邮箱账号" value="" /></p>
+                    <!--规定必需在提交之前填写输入字段-->
+                    <p><label for="password">密码：</label></p>
+                    <p><input type="password" id="password" name="password" class="loginInput" placeholder="请输入密码" />
+                    </p>
+                    <p><a class="forgetLink" href="#">忘记密码?</a></p>
+                    <input id="remember" type="checkbox" name="remember" />
+                    <label for="remember">记住登录状态</label>
+                </div>
+
+                <div class="loginBoxButtons">
+                    <button class="loginBtn" type="submit">登录</button>
+                    <div><a href="#">新用户注册</a></div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--引入注册表脚本 -->
+    <script src="js/js_signIn/signIn.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <!--设置网页图标-->
+    <link rel="icon" href="img/图标/bitbug_2.ico">
+
+    <!--引入样式重置/字体图标-->
+    <link rel="stylesheet" href="重置样式表/reset.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+    <!--引入jquary脚本-->
+    <script src="js/js_share/jquery-1.12.4.min.js"></script>
+
+    <!--引入顶端导航栏样式-->
+    <link rel="stylesheet" href="css/css_share/NavigationWapper.css">
+    <!--引入播放器样式/脚本-->
+    <link rel="stylesheet" type="text/css" href="css/css_moive/normalize.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/css_moive/moive_htmleaf-demo.min.css">
+    <link rel="stylesheet" href="css/css_moive/ckin.min.css">
+    <link rel="stylesheet" href="css/css_moive/demo.min.css">
+    <script src="js/js_movie/ckin.min.js"></script>
+    <!--引入剧情样式表-->
+    <link rel="stylesheet" type="text/css" href="css/css_moive/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/css_moive/movie_demo.min.css" />
+    <script src="js/js_movie/slick.min.js"></script>
+    <script src="js/js_movie/demo.min.js"></script>
+
+</head>
+
+<body>
+    <!--设置顶部导航栏-->
+    <div class="top_wapper" id="top_wapper">
+        <!--设置内部容器-->
+        <div class="inner_wapper">
+            <!--设置左侧导航栏 -->
+            <div class="left_navigation">
+                <div class="index">
+                    <a href="01_Index.html" target="_blank" class="index">
+                        <i class="fas fa-home fa-fw"></i>首页</a>
+                </div>
+                <div class="move">
+                    <a href="JavaScript:;"><i class="fas fa-film"></i>电影</a>
+                </div>
+                <div class="anuther">
+                    <a href="03_Author.html" target="_blank"> <i class="fas fa-marker"></i>作者</a>
+                </div>
+                <div class="character">
+                    <a href="04_Character.html" target="_blank"><i class="fas fa-feather-alt"></i>档案</a>
+                </div>
+                <div class="brand">
+                    <a href="05_Product.html" target="_blank"> <i class="fas fa-cart-arrow-down"></i>品牌</a>
+                </div>
+                <div class="remember">
+                    <a href="06_Remember.html" target="_blank"> <i class="fas fa-piggy-bank"></i>纪念</a>
+                </div>
+            </div>
+            <img src="img/图标/hp2.jpg" alt="hp">
+            <!--设置左侧导航栏-->
+            <div class="right_navigation">
+                <div id="signIn">
+                    <a href="07_SighIn.html" target="_blank"> <i class="fas fa-hat-wizard"> </i>Join us</a>
+                </div>
+                <div class="search_wapper">
+                    <a href="https://help.pottermore.com/hc/en-gb" target="_blank">
+                        <i class="fas fa-dragon" id="search_block"></i>Pottermore
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--视频播放器-->
+    <div class="htmleaf-container">
+        <header class="htmleaf-header">
+            <h1>Harry.Potter <span>It takes a lot of courage to fight against your enemies, and a lot more courage to
+                    stand up to your friends.</span></h1>
+        </header>
+        <section class="demo-section demo-section--light" id="demo">
+            <div class="container">
+                <video poster="img/背景/movie_background_img.jpg" src="mp3/哈利·波特影片完结.mp4" data-ckin="default"
+                       data-overlay="1"></video>
+            </div>
+        </section>
+    </div>
+
+    <!--剧情介绍-->
+    <div class="carousel">
+        <div class="slider slider-for"></div>
+        <div class="slider slider-nav">
+            <div class="nav-item">
+                <div class="content" style="background-image: url(img/海报/1.jpg)">
+                    <div class="number">01</div>
+                    <div class="body">
+                        <div class="location">Harry Potter </div>
+                        <div class="headline">and<br>the Philosopher's Stone</div>
+                        <a href="#0">
+                            <div class="link">Read the Story</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item">
+                <div class="content" style="background-image: url(img/海报/2.jpg)">
+                    <div class="number">02</div>
+                    <div class="body">
+                        <div class="location">Harry Potter</div>
+                        <div class="headline">and<br>the Chamber of Secrets</div>
+                        <a href="#0">
+                            <div class="link">Read the Story</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item">
+                <div class="content" style="background-image: url(img/海报/3.jpg)">
+                    <div class="number">03</div>
+                    <div class="body">
+                        <div class="location">Harry Potter</div>
+                        <div class="headline">and<br>the Prisoner of Azkaban</div>
+                        <a href="#0">
+                            <div class="link">Read the Story</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item">
+                <div class="content" style="background-image: url(img/海报/4.jpg)">
+                    <div class="number">04</div>
+                    <div class="body">
+                        <div class="location">Harry Potter</div>
+                        <div class="headline">and<br>the Goblet of Fire</div>
+                        <a href="#0">
+                            <div class="link">Read the Story</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item">
+                <div class="content" style="background-image: url(img/海报/5.jpg)">
+                    <div class="number">05</div>
+                    <div class="body">
+                        <div class="location">Harry Potter</div>
+                        <div class="headline">and<br>the Order of the Phoenix</div>
+                        <a href="#0">
+                            <div class="link">Read the Story</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item">
+                <div class="content" style="background-image: url(img/海报/6.jpg)">
+                    <div class="number">06</div>
+                    <div class="body">
+                        <div class="location">Harry Potter</div>
+                        <div class="headline">and<br>the Half-Blood Prince</div>
+                        <a href="#0">
+                            <div class="link">Read the Story</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item">
+                <div class="content" style="background-image: url(img/海报/7.jpg)">
+                    <div class="number">07</div>
+                    <div class="body">
+                        <div class="location">Harry Potter</div>
+                        <div class="headline">and<br>the Deathly Hallows：Part 1</div>
+                        <a href="#0">
+                            <div class="link">Read the Story</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item">
+                <div class="content" style="background-image: url(img/海报/8.jpg)">
+                    <div class="number">08</div>
+                    <div class="body">
+                        <div class="location">Harry Potter</div>
+                        <div class="headline">and<br> the Deathly Hallows ：Part 2</div>
+                        <a href="#0">
+                            <div class="link">Read the Story</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--设置指标-->
+        <div class="navigation">
+            <button class="forward"> > </button>
+            <button class="back">
+                < </button>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700);
+*,:after,:before{box-sizing:border-box}
+html{background-size:100%;overflow:hidden}
+body{position:relative;font-family:'Libre Baskerville',serif;background-image:url(../../img/背景/signIn_background_img.jpg);background-size:cover}
+h1{margin:0;padding:0;position:absolute;top:25%;left:50%;color:#fff;font-size:30px;color:rgba(42,40,40,.89);text-align:center;text-transform:uppercase;-webkit-transform:translate3d(-50%,-50%,0);transform:translate3d(-50%,-50%,0)}
+.wrap{width:100%;height:922px;position:relative;overflow:hidden}
+.wrap .bg{width:100%;height:100%;position:absolute;top:0;left:0;z-index:-1;background:url(../../img/背景/index_background_img.jpg) no-repeat center center;background-size:cover;-webkit-transform:scale(1.1);transform:scale(1.1)}
+.wrapper{margin:150px 0 140px 830px;width:754px;z-index:99999}
+.loginBox{background-color:#f3ece3;border:1px solid #bfd6e1;border-radius:5px;color:#444;font:14px 'Microsoft YaHei','微软雅黑';margin:0 auto;width:388px;box-shadow:0 0 7px rgba(0 ,0 ,0,.6)}
+.loginBox .loginBoxCenter{border-bottom:1px solid #dde0e8;padding:24px}
+.loginBoxCenter #password,.loginBoxCenter #text{box-sizing:content-box;border:.1px #fff solid;width:290px;height:25px}
+.loginBoxCenter #password:hover,.loginBoxCenter #text:hover{border:.1px #d8af64 solid}
+.loginBox .loginBoxCenter p{margin-bottom:10px}
+.loginBox .loginBoxButtons{border-top:0 solid #fff;border-bottom-left-radius:5px;border-bottom-right-radius:5px;line-height:28px;overflow:hidden;padding:20px 24px;vertical-align:center;filter:alpha(Opacity=80);-moz-opacity:.5;opacity:.5}
+.loginBox .loginInput{border:1px solid #d2d9dc;border-radius:.5px;color:#444;font:12px 'Microsoft YaHei','微软雅黑';padding:8px 14px;margin-bottom:8px;width:310px}
+.loginBox .loginInput:FOCUS{border:1px solid #b7d4ea;box-shadow:0 0 8px #b7d4ea}
+.loginBox .loginBtn{background-image:-moz-linear-gradient(to bottom,#00f,#85cfee);border:1px solid #98cce7;border-radius:.5px;box-shadow:inset rgba(0,0,0,.4) 0 1px 1px,rgba(0,0,181,.1) 0 1px 1px;color:#444;cursor:pointer;float:right;font:bold 13px Arial;padding:10px 50px}
+.loginBox .loginBtn:hover{color:#000;border:#134d6d solid 1px}
+.loginBox .loginBtn:HOVER{background-image:-moz-linear-gradient(to top,#00f,#85cfee)}
+.loginBox a.forgetLink{color:#4b4949;cursor:pointer;float:right;font:11px/20px Arial;vertical-align:middle;text-decoration:none}
+.loginBox .loginBoxButtons a{text-decoration:none;color:#4b4949}
+.loginBox a.forgetLink:HOVER{color:#000}
+.loginBox input#remember{vertical-align:middle}
+.loginBox label[for=remember]{font:11px Arial}
+.loginBox .loginBoxButtons a:hover{color:#000}
+#asklz{font-size:2.6em;font-family:"Proxima Nova Light",'Helvetica Neue',Arial,Helvetica,sans-serif;position:absolute;top:30%;left:10%;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}

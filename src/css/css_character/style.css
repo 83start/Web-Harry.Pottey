@@ -1,0 +1,309 @@
+html{
+    /* 设置当前网页的视距为800px，人眼距离网页的距离 */
+    perspective: 800px;
+}
+
+body{
+    background-color: rgb(23, 24, 31);
+}
+
+a{
+    text-decoration:none;
+}
+
+/*=====设置图片轮播=====*/
+/*设置容器*/
+.img_wapper{
+    margin-top: 100px;
+    position: relative;
+}
+
+.img_wapper .top_img img{
+    position: absolute;
+    top: -75px;
+    left: 150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    border: 2px black solid;
+}
+
+/* 设置浮动文字 */
+.img_wapper .top_word {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    /*文字不可选*/
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+.img_wapper .top_word h3{
+    color: rgb(255,215,0);
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.img_wapper .top_word h4{
+    font-size: 20px;
+    color: rgb(170, 114, 123);
+    font-style: oblique;
+    letter-spacing:6px;
+    margin-left: -24px;
+    margin-bottom: 20px;
+}
+
+.img_wapper .top_word .word{
+    color: rgba(29, 28, 28, 0.767);
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 800;
+    margin-left: -50px;
+}
+
+.img_wapper .top_word .learnMore{
+    background-color: rgb(57, 155, 211);
+    font-size: 45px;
+    font-family: cursive;
+    color: aliceblue;
+    height: 60px;
+    width: 270px;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 30px;
+    display: block;
+    transition:color 0.3s;
+    
+}
+
+.img_wapper .top_word .learnMore:hover{
+    height: 62px;
+    width: 273px;
+    box-shadow: 0 6px 4px rgba(0,0,0,0.5);
+}
+
+.img_wapper .top_word .learnMore:hover{
+    color: #c8cfcf;
+    background-color: rgb(90, 119, 133);
+}
+
+.top_wapper{
+    width: 1420px;
+}
+
+/*设置图片*/
+#div_img img{
+    width: 1519px;
+}
+
+/*设置指标1*/
+#div_point{
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    color: #e0738c;
+}
+
+#div_point ul li{
+    float: left;
+    margin-left: 5px;
+    transition:0.5s;
+}
+
+#div_point ul li:hover{
+    color: #de1010;
+    transform: translateZ(3px);
+}
+
+/*设置左右指标2*/
+#div_left,#div_right{
+    position: absolute;
+    top: 33%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size:40px ;
+    color: #306a6c;
+    transition:0.5s;
+}
+
+#div_left:hover,#div_right:hover{
+    font-size: 42px;
+    transform: translateZ(5px);
+}
+
+#div_left{
+    left: 6%;
+}
+
+#div_right{
+    right: 6%;
+}
+
+/*=====设置九宫格=====*/
+/*设置表格外边框大小*/
+.people{
+    height: 900px;
+    width: 900px;
+    margin:40px auto ;
+}
+
+.people tr td{
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgba(54, 54, 52, 0.62);
+    box-shadow: 0 0 5px rgba(217, 208, 45, 0.5);
+    position: relative;
+    font-size: 0;
+    margin: 7px 7px 0 0 ;
+}
+
+/*设置内容框*/
+.people tr td span{
+    color: white;
+    font-size: 40px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    padding-top: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.people tr td span h4{
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #e38888;
+    box-shadow:0 3px 5px rgba(194, 14, 14, 0.56);
+}
+
+.people tr td:hover span{
+    display: block;
+}
+
+
+/* =====设置动画===== */
+/* KEYFRAMES */
+.htmleaf-container{
+    color: #4b4949;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes configure-clockwise {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes configure-xclockwise {
+    0% {
+        transform: rotate(45deg);
+    }
+    25% {
+        transform: rotate(-45deg);
+    }
+    50% {
+        transform: rotate(-135deg);
+    }
+    75% {
+        transform: rotate(-215deg);
+    }
+    100% {
+        transform: rotate(-305deg);
+    }
+}
+
+@keyframes pulse {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: .25;
+        transform: scale(.75);
+    }
+}
+
+/* SOLAR SYSTEM */
+.spinner-box{
+    position: relative;
+}
+
+.solar-system {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 6em;
+    left: 3%;
+}
+
+.orbit {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffffa5;
+    border-radius: 50%;
+}
+
+.earth-orbit {
+    width: 165px;
+    height: 165px;
+    -webkit-animation: spin 12s linear 0s infinite;
+}
+
+.venus-orbit {
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 7.4s linear 0s infinite;
+}
+
+.mercury-orbit {
+    width: 90px;
+    height: 90px;
+    -webkit-animation: spin 3s linear 0s infinite;
+}
+
+.planet {
+    position: absolute;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #2d99c7;
+}
+
+.sun {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #f8efa0;
+}
+
